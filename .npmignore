@@ -1,2 +1,9 @@
 assets/
 .github/
+
+# from gitignore
+/node_modules
+.DS_Store
+package-lock.json
+/tmp
+/outlines
