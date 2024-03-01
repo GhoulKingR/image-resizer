@@ -1,7 +1,7 @@
 # `image-resizer`
 A CLI for resizing your images.
 
-![comaring sizes](https://github.com/GhoulKingR/image-resizer/raw/main/assets/compare-sizes.png)
+![comparing sizes](https://github.com/GhoulKingR/image-resizer/raw/main/assets/compare-sizes.png)
 ## Installing `image-resizer`
 To install this project clone the repository, run this command:
 ```bash
