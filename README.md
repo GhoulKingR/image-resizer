@@ -4,7 +4,7 @@ A CLI for resizing your images.
 ## Installing `image-resizer`
 To install this project clone the repository, run this command:
 ```bash
-npm install image-resizer
+npm i @ghoulking_r/image-resizer
 ```
 Running this command provides an `image-resizer` command for resizing images. Run `image-resizer -h` to be sure everything runs properly. You should get this output in the terminal:
 ![image-resizer help](./assets/test-help.png)
@@ -26,7 +26,9 @@ image-resizer --width 500 -o my-file.png image.jpg
 ## Updating `image-resizer`
 To update `image-resizer` to the newest version, run this command:
 ```bash
-npm update image-resizer
+npm update @ghoulking_r/image-resizer
 ```
 ## Found this project helpful?
 Please give this project a start 🌟 and share with your friends.
+## Found a bug, or want make a contribution to this project?
+If you want to bring up an issue, improve the project, or want to make any fixes, be sure to take a look the [Contrubutors guideline](./CONTRIBUTIONS.md). It tells you everything you need to know.
