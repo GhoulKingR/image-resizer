@@ -5,8 +5,8 @@ const { ArgumentParser } = require('argparse');
 const { version } = require('./package.json');
 const { resize } = require('./resizer.js');
 
-const parser = new ArgumentParser({ description: 'Argparse example' });
-parser.add_argument('image', { metavar: '\"image\"', type: 'str', help: 'A path to the image you want to resize' });
+const parser = new ArgumentParser({ description: 'A CLI for resizing your images' });
+parser.add_argument('image', { metavar: 'image', type: 'str', help: 'A path to the image you want to resize' });
 parser.add_argument('-v', '--version', { action: 'version', version });
 parser.add_argument('-o', '--output', { help: 'If you want to specify the output file. The output file is output.jpg by default.' });
 parser.add_argument('--width', { help: 'The new width you want to resize the image to.' });
