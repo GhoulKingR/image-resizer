@@ -3,7 +3,7 @@
 
 const { ArgumentParser } = require('argparse');
 const { version } = require('./package.json');
-const { resize } = require('./resizer.js');
+const { resize } = require('./libs/resizer.js');
 
 const parser = new ArgumentParser({ description: 'A CLI for resizing your images' });
 parser.add_argument('image', { metavar: 'image', type: 'str', help: 'A path to the image you want to resize' });
