@@ -3,7 +3,7 @@
 
 const { ArgumentParser } = require('argparse');
 const { version } = require('./package.json');
-const { resize, init } = require('./resizer.js');
+const { resize } = require('./resizer.js');
 
 const parser = new ArgumentParser({ description: 'Argparse example' });
 parser.add_argument('image', { metavar: '\"image\"', type: 'str', help: 'A path to the image you want to resize' });
@@ -18,7 +18,7 @@ const {
 } = parser.parse_args();
 const RESIZE_WITH_WIDTH = true;
 const RESIZE_WITH_HEIGHT = false;
-const OUTPUT = output || "output.png";
+const OUTPUT = output || "output.jpg";
 
 function toNumber(string) {
   const convertedString = Number(string);
@@ -29,12 +29,10 @@ function toNumber(string) {
 try {
   if (height && !width) {
     const heightInNumber = toNumber(height);
-    init(image, OUTPUT, heightInNumber, RESIZE_WITH_HEIGHT);
-    resize();
+    resize(image, OUTPUT, heightInNumber, RESIZE_WITH_HEIGHT);
   }else if (width && !height) {
     const widthInNumber = toNumber(width);
-    init(image, OUTPUT, widthInNumber, RESIZE_WITH_WIDTH);
-    resize();
+    resize(image, OUTPUT, widthInNumber, RESIZE_WITH_WIDTH);
   } else {
     throw new Error("You can only either suggest a new width or a new hight. But not both");
   }
