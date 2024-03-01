@@ -3,5 +3,4 @@ node_modules/
 *.outline.md
 
 # image files
-*.jpg
-*.png
+tmp/*
