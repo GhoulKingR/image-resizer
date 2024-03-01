@@ -14,7 +14,8 @@ parser.add_argument('--height', { help: 'The new height you want to resize the i
 const {
   image,
   output,
-  width, height,
+  width,
+  height,
 } = parser.parse_args();
 const RESIZE_WITH_WIDTH = true;
 const RESIZE_WITH_HEIGHT = false;
