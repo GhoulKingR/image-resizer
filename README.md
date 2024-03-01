@@ -33,4 +33,4 @@ npm update @ghoulking_r/image-resizer
 ## Found this project helpful?
 Please give this project a start 🌟 and share with your friends.
 ## Found a bug, or want make a contribution to this project?
-If you want to bring up an issue, improve the project, or want to make any fixes, be sure to take a look the [Contrubutors guideline](./CONTRIBUTIONS.md). It tells you everything you need to know.
+If you want to bring up an issue, improve the project, or want to make any fixes, be sure to take a look the [Contrubutors guideline](https://github.com/GhoulKingR/image-resizer/blob/main/CONTRIBUTIONS.md). It tells you everything you need to know.
