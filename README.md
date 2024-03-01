@@ -1,1 +1,1 @@
-# image-resized
+# image-resizer
