@@ -9,8 +9,8 @@ const parser = new ArgumentParser({ description: 'Argparse example' });
 parser.add_argument('image', { metavar: '\"image\"', type: 'str', help: 'A path to the image you want to resize' });
 parser.add_argument('-v', '--version', { action: 'version', version });
 parser.add_argument('-o', '--output', { help: 'If you want to specify the output file. The output file is output.jpg by default.' });
-parser.add_argument('-w', '--width', { help: 'The new width you want to resize the image to.' });
-parser.add_argument('-he', '--height', { help: 'The new height you want to resize the image to.' });
+parser.add_argument('--width', { help: 'The new width you want to resize the image to.' });
+parser.add_argument('--height', { help: 'The new height you want to resize the image to.' });
 const {
   image,
   output,
@@ -39,5 +39,5 @@ try {
     throw new Error("You can only either suggest a new width or a new hight. But not both");
   }
 } catch (error) {
-  console.error(error.message);
+  console.error("Error: " + error.message);
 }
