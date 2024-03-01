@@ -1,11 +1,9 @@
 const Jimp = require('jimp');
-const ctx = this;
 
 let internalImagePath = '';
 let internalDesiredLength = 0;
 let internalOutput = '';
 let internalResizeWithWidth = false;
-
 
 function init (inputPath, output, desiredLength, resizeWithWidth) {
   internalImagePath = inputPath;
