@@ -1,13 +1,15 @@
 # `image-resizer`
 A CLI for resizing your images.
-![comaring sizes](./assets/compare-sizes.png)
+
+![comaring sizes](https://github.com/GhoulKingR/image-resizer/raw/main/assets/compare-sizes.png)
 ## Installing `image-resizer`
 To install this project clone the repository, run this command:
 ```bash
 npm i @ghoulking_r/image-resizer
 ```
 Running this command provides an `image-resizer` command for resizing images. Run `image-resizer -h` to be sure everything runs properly. You should get this output in the terminal:
-![image-resizer help](./assets/test-help.png)
+
+![image-resizer help](https://github.com/GhoulKingR/image-resizer/raw/main/assets/test-help.png)
 ## Resizing an image
 The following is the format for resizing an image with `image-resizer`:
 ```bash
