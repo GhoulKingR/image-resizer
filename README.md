@@ -8,8 +8,22 @@ To install this project clone the repository, run this command:
 npm i @ghoulking_r/image-resizer
 ```
 Running this command provides an `image-resizer` command for resizing images. Run `image-resizer -h` to be sure everything runs properly. You should get this output in the terminal:
+```
+usage: image-resizer [-h] [-v] [-o OUTPUT] [--width WIDTH] [--height HEIGHT] image
 
-![image-resizer help](https://github.com/GhoulKingR/image-resizer/raw/main/assets/test-help.png)
+A CLI for resizing your images
+
+positional arguments:
+  image                 A path to the image you want to resize
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+  -o OUTPUT, --output OUTPUT
+                        If you want to specify the output file. The output file is output.jpg by default.
+  --width WIDTH         The new width you want to resize the image to.
+  --height HEIGHT       The new height you want to resize the image to.
+```
 ## Resizing an image
 The following is the format for resizing an image with `image-resizer`:
 ```bash
