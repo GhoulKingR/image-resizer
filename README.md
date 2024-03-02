@@ -29,7 +29,7 @@ The following is the format for resizing an image with `image-resizer`:
 ```bash
 image-resizer [--width <px> | --height <px>] </path/to/image/file>
 ```
-> The `--width` and `--height` arguments are for specifying the width and height that you want to resize the image to. If you set only `--width`, the `--height` value will automatically be calculated based on the image's aspect ratio, the same for `--height` too. You can set both `--width` and `--height` but you may stretch the image.
+The `--width` and `--height` arguments are for specifying the width and height that you want to resize the image to. If you set only `--width`, the `--height` value will automatically be calculated based on the image's aspect ratio, the same for `--height` too. You can set both `--width` and `--height` but you may stretch the image.
 Take a look at these examples:
 ```bash
 image-resizer --width 500 image.jpg    # resize the image to a width of 500px
