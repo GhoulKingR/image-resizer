@@ -29,11 +29,12 @@ The following is the format for resizing an image with `image-resizer`:
 ```bash
 image-resizer [--width <px> | --height <px>] </path/to/image/file>
 ```
-> The `--width` and `--height` arguments are for specifying the width and height that you want to resize the image to. To avoid stretching the image, the image's aspect ratio is maintained. And you're not allowed to change both the width and height parameters at the same time.
+> The `--width` and `--height` arguments are for specifying the width and height that you want to resize the image to. If you set only `--width`, the `--height` value will automatically be calculated based on the image's aspect ratio, the same for `--height` too. You can set both `--width` and `--height` but you may stretch the image.
 Take a look at these examples:
 ```bash
 image-resizer --width 500 image.jpg    # resize the image to a width of 500px
 image-resizer --height 500 image.jpg   # resize the image to a height of 500px
+image-resizer --width 500 --height 500 image.jpg   # resize the image to a width and height of 500px
 ```
 By default, `image-resizer` saves the output of the image to an `output.jpg` file in the current working directory. If you want to save your resized image to a different file, `image-resizer` allows you to do so with an `--output` (`-o` for short) option that you can set. For example:
 ```bash
